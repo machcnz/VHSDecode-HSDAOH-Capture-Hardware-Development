@@ -1,8 +1,8 @@
 # AD9226 Module modification for VHS-Decode - ADC Capture - ~600mVp-p@050 Ohm FS
 
 > [!NOTE]  
-> Revision 0.5<br>
-> 08-07-2026
+> Revision 0.6<br>
+> 09-07-2026
 
 <!-- TOC -->
 * [Fixing early ADC clipping](#fixing-early-adc-clipping)
@@ -60,18 +60,17 @@ The fix is to:
 | 4.1          | 2.4k           | 0.6        |
 
 > [!CAUTION]
-> **Values below 2.4k are not recommended** due to lower SNR
+> **Values above 2.4k are not recommended** due to lower SNR
 
 > [!TIP]
 > Higher value rf/rg resistors lead to higher Johnson noise <br>
-> Analogue Devices AD8138 does not recommend rf >= 5k, I suggest rf >= 3k
+> Analogue Devices AD8138 does not recommend rf <= 5k, I suggest rf <= 3k
 
 ## Modification
 
 **Stock variant**
 
 ![schematic-stock.jpg](assets/schematic-stock.JPG)
-
 
 **Stock board view**
 
@@ -84,10 +83,24 @@ The fix is to:
 3. **R5** — **Add** 0Ω resistor _- Optionally taken from R25_ 
 4. **R9 & R11** — **Replace** with 47Ω resistors 
 5. **R2 & R14** — **Replace** with 2.2kΩ _- Recommended gain_ 
-6. **R6 & R13** — Replace with 270Ω resistors 
+6. **R6 & R13** — **Replace** with 270Ω resistors 
 7. **R16** — **Replace** with 27Ω resistor _- Provides DC offset balance_ 
-8. **C3** — **Add** 12nF capacitor lifted at 45 deg in series with R16
+8. **C3** — **Add** 12nF capacitor lifted at 45 deg in series with **R16**
 
+#### Visual guide
+<details>
+  <summary>Step by step visual guide</summary
+                                     
+  ![gain-mod-step-1.jpg](assets/gain_mod_steps/gain-mod-step-1.jpg)
+  ![gain-mod-step-2.jpg](assets/gain_mod_steps/gain-mod-step-2.jpg)
+  ![gain-mod-step-3.jpg](assets/gain_mod_steps/gain-mod-step-3.jpg)
+  ![gain-mod-step-4.jpg](assets/gain_mod_steps/gain-mod-step-4.jpg)
+  ![gain-mod-step-5.jpg](assets/gain_mod_steps/gain-mod-step-5.jpg)
+  ![gain-mod-step-6.jpg](assets/gain_mod_steps/gain-mod-step-6.jpg)
+  ![gain-mod-step-7.jpg](assets/gain_mod_steps/gain-mod-step-7.jpg)
+  ![gain-mod-step-8.jpg](assets/gain_mod_steps/gain-mod-step-8.jpg)
+  
+</details>
 
 ### LPF and other improvements
 
