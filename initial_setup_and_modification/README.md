@@ -107,9 +107,13 @@ Gain is set to ~4x to target the input level of 650mVp-p
 
 ### LPF and other improvements
 
+> [!CAUTION]
+> Suggested modifications are aimed towards low band (<10MHz) formats like VHS or Video8<br>
+> For high band and direct color formats you'd need to recalculate low-pass filter values
+
 1. **R25** - **Replace** with 10nF capacitor **(C3B)**
-2. **C6lpf** — **Add** on the AD9226 side and **across R9/R11** add 160pF _- Provides 1-pole -3db@10MHz LPF & ADC kickback suppression_ 
-3. **C2a/b** — **Add** 2.2pF capacitor **in parallel** on top of **R2 & R14** _- Stability and slight LPF roll off_ 
+2. **C4A** — **Add** 160pF capactitor **across R9/R11 on the AD9226 side** _- Provides 1-pole -3db@10MHz LPF & ADC kickback suppression_ 
+3. **C2A/B** — **Add** 2.2pF capacitor **in parallel** on top of **R2 & R14** _- Stability and slight LPF roll off_ 
 
 **Modded variant**
 
