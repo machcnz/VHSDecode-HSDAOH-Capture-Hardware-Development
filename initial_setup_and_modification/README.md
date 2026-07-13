@@ -66,7 +66,7 @@ Gain is set to ~4x to target the input level of 650mVp-p
 
 **Stock variant**
 
-![schematic-stock.jpg](assets/schematic-stock.jpg)
+![schematic-stock.jpg](assets/schematic-stock.JPG)
 
 **Stock board view**
 
@@ -88,7 +88,7 @@ Gain is set to ~4x to target the input level of 650mVp-p
 
 **Modded variant**
 
-![schematic-stock.jpg](assets/schematic-gain-mod.jpg)
+![schematic-gain-mod.jpg](assets/schematic-gain-mod.JPG)
 
 #### Visual guide
 <details>
@@ -117,7 +117,7 @@ Gain is set to ~4x to target the input level of 650mVp-p
 
 **Modded variant**
 
-![gain-mod-board-schematic.jpg](assets/schematic-gain-lpf-mod.jpg)
+![schematic-gain-lpf-mod.jpg](assets/schematic-gain-lpf-mod.JPG)
 
 ### BOM
 
