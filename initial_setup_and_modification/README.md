@@ -1,15 +1,14 @@
-# AD9226 Module modification for VHS-Decode - ADC Capture - ~600mVp-p@050 Ohm FS
+# AD9226 Module modification for VHS-Decode - ADC Capture - ~650mVp-p@50Ω
 
 > [!NOTE]  
-> Revision 0.6<br>
-> 09-07-2026
+> Revision 0.7<br>
+> 14-07-2026
 
 <!-- TOC -->
 * [Fixing early ADC clipping](#fixing-early-adc-clipping)
 * [Gain configuration](#gain-configuration)
-* [Configuration notes](#configuration-notes)
   * [Gain table](#gain-table)
-* [Modification](#modification)
+* [Modifications](#modifications)
   * [Gain setup](#gain-setup)
     * [Visual guide](#visual-guide)
   * [LPF and other improvements](#lpf-and-other-improvements)
@@ -37,10 +36,7 @@ The fix is to:
 
 ## Gain configuration
 
-## Configuration notes
-* Target ADC input level for 650mVp-p - Gain set to ~4x gain
-* R2 / R14 = 2.2kΩ
-* R6 & R14 270Ω - **Do not change**
+Gain is set to ~4x to target the input level of 650mVp-p
 
 > [!NOTE]  
 > SNR ~70dB<br>
@@ -66,15 +62,18 @@ The fix is to:
 > Higher value rf/rg resistors lead to higher Johnson noise <br>
 > Analogue Devices AD8138 does not recommend rf <= 5k, I suggest rf <= 3k
 
-## Modification
+## Modifications
 
 **Stock variant**
 
-![schematic-stock.jpg](assets/schematic-stock.JPG)
+![schematic-stock.jpg](assets/schematic-stock.jpg)
 
 **Stock board view**
 
 ![ADC9226-stock-board-photo.jpg](assets/ADC9226-stock-board-photo.jpg)
+
+> [!CAUTION]
+> Following steps below will make your AD9226 module **unsuitable for capturing composite video** due to added high-pass filtering
 
 ### Gain setup
 
@@ -85,11 +84,15 @@ The fix is to:
 5. **R2 & R14** — **Replace** with 2.2kΩ _- Recommended gain_ 
 6. **R6 & R13** — **Replace** with 270Ω resistors 
 7. **R16** — **Replace** with 27Ω resistor _- Provides DC offset balance_ 
-8. **C3** — **Add** 12nF capacitor lifted at 45 deg in series with **R16**
+8. **C3A** — **Add** 10nF capacitor lifted at 45 deg in series with **R16**
+
+**Modded variant**
+
+![schematic-stock.jpg](assets/schematic-gain-mod.jpg)
 
 #### Visual guide
 <details>
-  <summary>Step by step visual guide</summary
+  <summary>Step by step visual guide</summary>
                                      
   ![gain-mod-step-1.jpg](assets/gain_mod_steps/gain-mod-step-1.jpg)
   ![gain-mod-step-2.jpg](assets/gain_mod_steps/gain-mod-step-2.jpg)
@@ -104,11 +107,13 @@ The fix is to:
 
 ### LPF and other improvements
 
-1. **R25** - **Replace** with 12nF capacitor 
+1. **R25** - **Replace** with 10nF capacitor **(C3B)**
 2. **C6lpf** — **Add** on the AD9226 side and **across R9/R11** add 160pF _- Provides 1-pole -3db@10MHz LPF & ADC kickback suppression_ 
 3. **C2a/b** — **Add** 2.2pF capacitor **in parallel** on top of **R2 & R14** _- Stability and slight LPF roll off_ 
 
-![gain-mod-board-schematic.jpg](assets/schematic-gain-lpf-mod.JPG)
+**Modded variant**
+
+![gain-mod-board-schematic.jpg](assets/schematic-gain-lpf-mod.jpg)
 
 ### BOM
 
@@ -119,7 +124,7 @@ The fix is to:
 | Resistor   | 56 Ohm    | R17/R3-R25 | 1        |
 | Resistor   | 270 Ohm    | R6, R13    | 2        |
 | _Resistor_ | _2.2k Ohm_ | _R2, R14_  | _2_        |
-| Capacitor  | 6.8 nF   | R16        | 1        |
+| Capacitor  | 10 nF   | R16, R25        | 1        |
 | Capacitor  | 2.2 pF   | R2, R14    | 2        |
 | Capacitor  | 160 pF   | R9/R11     | 1        |
 
