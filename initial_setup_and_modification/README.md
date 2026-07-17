@@ -36,7 +36,8 @@ The fix is to:
 
 ## Gain configuration
 
-Gain is set to ~4x to target the input level of 650mVp-p
+> *VCR RF Capture:* Recommended gain ~4x to target the input level of 650mVp-p
+> *CVBS Capture:* Recommended gain ~2x for a CVBS of 1vp-p
 
 > [!NOTE]  
 > SNR ~70dB<br>
@@ -44,7 +45,7 @@ Gain is set to ~4x to target the input level of 650mVp-p
 > ENOB ~ 11bits
 
 ### Gain table
-
+> Note: For CVBS this table differs due to 75ohm Termination - **use R2 & R14 = 1.1k** 
 | Gain (times) | R2 & R14 (Ohm) | Vin (Vp-p) |
 |--------------|----------------|------------|
 | 1            | 560            | 2.5        |
@@ -72,18 +73,21 @@ Gain is set to ~4x to target the input level of 650mVp-p
 
 ![ADC9226-stock-board-photo.jpg](assets/ADC9226-stock-board-photo.jpg)
 
-> [!CAUTION]
-> Following steps below will make your AD9226 module **unsuitable for capturing composite video** due to added high-pass filtering
+> [Important Information - High Pass Filter]
+> Following steps below provides subtle High-Pass Filtering to the AD9226 Analogue to digital converter, reducing unwanted low Frequency Noise.
+>> _-3dB HPF Of various AC Coupling caps @50ohm Source Impedance:_
+>>  10nf = 36Khz
+>>  6.8nF = 77Khz
 
 ### Gain setup
 
 1. **R3, R5, R8, R17** - **Remove** 
-2. **R8 or R17 or R3** — **Add** 56Ω resistor 
+2. **R8 or R17 or R3** — **Add** 56Ω resistor **for CVBS use 75Ω**
 3. **R5** — **Add** 0Ω resistor _- Optionally taken from R25_ 
 4. **R9 & R11** — **Replace** with 47Ω resistors 
 5. **R2 & R14** — **Replace** with 2.2kΩ _- Recommended gain_ 
 6. **R6 & R13** — **Replace** with 270Ω resistors 
-7. **R16** — **Replace** with 27Ω resistor _- Provides DC offset balance_ 
+7. **R16** — **Replace** with 27Ω resistor **for CVBS use 39Ω** _- Provides NFeedback Network Matching_ 
 8. **C3A** — **Add** 10nF capacitor lifted at 45 deg in series with **R16**
 
 **Modded variant**
