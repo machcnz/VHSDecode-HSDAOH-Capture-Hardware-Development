@@ -87,7 +87,7 @@ Gain is set to ~4x to target the input level of 650mVp-p
 
 **Modded variant**
 
-![schematic-gain-mod.jpg](assets/schematic-gain-mod.JPG)
+![schematic-gain-mod.jpg](assets/schematic-gain-lpf-mod.JPG)
 
 #### Visual guide
 <details>
