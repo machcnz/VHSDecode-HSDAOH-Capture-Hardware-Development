@@ -9,9 +9,8 @@
 * [Gain configuration](#gain-configuration)
   * [Gain table](#gain-table)
 * [Modifications](#modifications)
-  * [Gain setup](#gain-setup)
+  * [Recommended](#Recommended improvements for capture)
     * [Visual guide](#visual-guide)
-  * [LPF and other improvements](#lpf-and-other-improvements)
   * [BOM](#bom)
 <!-- TOC -->
 
@@ -60,7 +59,7 @@ Gain is set to ~4x to target the input level of 650mVp-p
 
 > [!TIP]
 > Higher value rf/rg resistors lead to higher Johnson noise <br>
-> Analogue Devices AD8138 does not recommend rf <= 5k, I suggest rf <= 3k
+> Analogue Devices AD8138 does not recommend rf is no greater than 5k, I suggest rf <= 3k
 
 ## Modifications
 
@@ -72,10 +71,10 @@ Gain is set to ~4x to target the input level of 650mVp-p
 
 ![ADC9226-stock-board-photo.jpg](assets/ADC9226-stock-board-photo.jpg)
 
-> [!CAUTION]
-> Following steps below will make your AD9226 module **unsuitable for capturing composite video** due to added high-pass filtering
+> [!NOTE]
+> The modification includes a gentle **highpass filter** that attenuates hash and headswitch noise.
 
-### Gain setup
+### Recommended improvements for capture
 
 1. **R3, R5, R8, R17** - **Remove** 
 2. **R8 or R17 or R3** — **Add** 56Ω resistor 
