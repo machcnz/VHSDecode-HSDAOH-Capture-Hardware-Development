@@ -113,6 +113,10 @@ Gain is set to ~4x to target the input level of 650mVp-p
 2. **C4A** — **Add** 160pF capactitor **across R9/R11 on the AD9226 side** _- Provides 1-pole -3db@10MHz LPF & ADC kickback suppression_ 
 3. **C2A/B** — **Add** 2.2pF capacitor **in parallel** on top of **R2 & R14** _- Stability and slight LPF roll off_ 
 
+
+**Fully modded board view**
+![ADC9226-fully-modded-photo.jpg](assets/ADC9226-fully-modded-photo.jpg)
+
 ### BOM
 
 | Type       | Value    | Ref        | Quantity |
