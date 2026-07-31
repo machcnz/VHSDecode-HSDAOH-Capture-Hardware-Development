@@ -3,12 +3,13 @@ Sharing of VHS-Decode hardware development with a focus standardizing the low co
 
 [ADC gain setup and module modification](initial_setup_and_modification/README.md) - a complete guide for gain setup and other improvements of AD9226  module
 
-[Pico 2 firmware](rp2350_firmware/) - ready to flash .uf2 firmware
+[Pico 2 firmware](rp2350_firmware/stock_firmware.uf2) - ready to flash .uf2 firmware
 
-[Pico 2 clipping LED firmware](https://github.com/machcnz/hsdaoh-rp2350/releases/tag/Firmware-External-ADC) - ready to flash .uf2 firmware - with Power LED ADC Clipping indicator
+[Pico 2 clipping LED firmware](rp2350_firmware/clipping_led_firmware.uf2) - ready to flash .uf2 firmware with Power LED ADC Clipping indicator
 
-[Use with misrc-gui for hsdaoh](https://github.com/machcnz/HSDAOH-MISRC-GUI) - download and install the Windows release here.
+[Case](case/README.md) - .stl files for printable case
 
+[MISRC-GUI for HSDAOH](https://github.com/harrypm/MISRC/releases) - download and install the Windows release here.
 
 ## The high level steps to get up and running.
 This guide assumes a basic understand of the concepts, hardware & software options and usage of the VHS decode's capture method.
