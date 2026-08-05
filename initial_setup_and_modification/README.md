@@ -1,8 +1,8 @@
 # AD9226 Module modification for VHS-Decode - ADC Capture - ~650mVp-p@50Ω
 
 > [!NOTE]  
-> Revision 0.8<br>
-> 26-07-2026
+> Revision 0.9<br>
+> 06-08-2026
 
 <!-- TOC -->
 * [Fixing early ADC clipping](#fixing-early-adc-clipping)
@@ -108,11 +108,18 @@ Gain is set to ~4x to target the input level of 650mVp-p
 
 > [!CAUTION]
 > Suggested modifications are aimed towards low band (<10MHz) formats like VHS or Video8<br>
+> You can use a different C4A value from table below<br>
 
 1. **R25** - **Replace** with 10nF capacitor **(C3B)**
-2. **C4A** — **Add** 160pF capactitor **across R9/R11 on the AD9226 side** _- Provides 1-pole -3db@10MHz LPF & ADC kickback suppression_ 
+2. **C4A** — **Add** 82pF capacitor **across R9/R11 on the AD9226 side** _- Provides 1-pole -3db@10MHz LPF & ADC kickback suppression_ 
 3. **C2A/B** — **Add** 2.2pF capacitor **in parallel** on top of **R2 & R14** _- Stability and slight LPF roll off_ 
 
+| C4A       | Cutoff frequency    |
+|------------|----------|
+| 100 pF   | 8.2 MHz   | 
+| **82 pF**   | **10.0 MHz**   | 
+| 68 pF   | 12.1 MHz   | 
+| 47 pF   | 17.5 MHz   | 
 
 **Fully modded board view**
 ![ADC9226-fully-modded-photo.jpg](assets/ADC9226-fully-modded-photo.jpg)
