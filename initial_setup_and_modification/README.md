@@ -112,7 +112,7 @@ Gain is set to ~4x to target the input level of 650mVp-p
 
 1. **R25** - **Replace** with 10nF capacitor **(C3B)**
 2. **C4A** — **Add** 82pF capacitor **across R9/R11 on the AD9226 side** _- Provides 1-pole -3db@10MHz LPF & ADC kickback suppression_ 
-3. **C2A/B** — **Add** 2.2pF capacitor **in parallel** on top of **R2 & R14** _- Stability and slight LPF roll off_ 
+3. **C2A/B** — **Add** 2.2pF capacitor **in parallel** on top of **R2 & R14** _- Stability and slight antialiasing LPF roll off_ 
 
 | C4A       | Cutoff frequency    |
 |------------|----------|
@@ -135,7 +135,7 @@ Gain is set to ~4x to target the input level of 650mVp-p
 | _Resistor_ | _2.2k Ohm_ | _R2, R14_  | _2_        |
 | Capacitor  | 10 nF   | R16, R25        | 1        |
 | Capacitor  | 2.2 pF   | R2, R14    | 2        |
-| Capacitor  | 160 pF   | R9/R11     | 1        |
+| Capacitor  | 82 pF   | R9/R11     | 1        |
 
 > [!NOTE]  
 > All SMD, 0805 size<br>
