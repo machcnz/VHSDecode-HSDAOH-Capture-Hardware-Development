@@ -84,6 +84,8 @@ Gain is set to ~4x to target the input level of 650mVp-p
 6. **R6 & R13** — **Replace** with 270Ω resistors 
 7. **R16** — **Replace** with 27Ω resistor _- Provides DC offset balance_ 
 8. **C3A** — **Add** 10nF capacitor lifted at 45 deg in series with **R16**
+9. **C3B** — **Add** 10nF capacitor replacing R5
+
 
 **Modded variant**
 
