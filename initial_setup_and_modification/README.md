@@ -84,7 +84,7 @@ Gain is set to ~4x to target the input level of 650mVp-p
 6. **R6 & R13** — **Replace** with 270Ω resistors 
 7. **R16** — **Replace** with 27Ω resistor _- Provides DC offset balance_ 
 8. **C3A** — **Add** 10nF capacitor lifted at 45 deg in series with **R16**
-9. **C3B** — **Add** 10nF capacitor replacing R5
+9. **C3B** — **Add** 10nF capacitor replacing **R5/R25**
 
 
 **Modded variant**
@@ -112,9 +112,8 @@ Gain is set to ~4x to target the input level of 650mVp-p
 > Suggested modifications are aimed towards low band (<10MHz) formats like VHS or Video8<br>
 > You can use a different C4A value from table below<br>
 
-1. **R25** - **Replace** with 10nF capacitor **(C3B)**
-2. **C4A** — **Add** 82pF capacitor **across R9/R11 on the AD9226 side** _- Provides 1-pole -3db@10MHz LPF & ADC kickback suppression_ 
-3. **C2A/B** — **Add** 2.2pF capacitor **in parallel** on top of **R2 & R14** _- Stability and slight antialiasing LPF roll off_ 
+1. **C4A** — **Add** 82pF capacitor **across R9/R11 on the AD9226 side** _- Provides 1-pole -3db@10MHz LPF & ADC kickback suppression_ 
+2. **C2A/B** — **Add** 2.2pF capacitor **in parallel** on top of **R2 & R14** _- Stability and slight antialiasing LPF roll off_ 
 
 | C4A       | Cutoff frequency    |
 |------------|----------|
