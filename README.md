@@ -76,7 +76,7 @@ Refer to the [guide](initial_setup_and_modification/README.md) in this repo.
 Recommend full modification - or - modify for gain & VHS-Decode ready, is your choice.
 
 
-### 2. Flash the RPI PICO 3
+### 2. Flash the RPI PICO 2
 
 - [Pico 2 HSDAOH firmware with clipping indicator](rp2350_firmware/clipping_led_firmware.uf2) (uses the built in PI PICO 2 Power LED)
 
