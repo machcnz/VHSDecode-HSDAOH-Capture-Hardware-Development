@@ -60,6 +60,13 @@ Additional Items needed:
 - Optional: 10MHz Low pass filter and for less hassle with Amp gain setting & adjustment - one (Digital) attenuator with attenuation steps
             of atleast -5db, -15db, -20db
 
+
+- 1x [DVI-Sock](https://github.com/Wren6991/Pico-DVI-Sock) for a flush fit with the pcb edge, otherwise the adafruit DVI sock works fine too
+- 2x 15pin 2.54mm pin-socket header
+
+
+**PCM1802 module defect fixes**
+
 > [!CAUTION - 2 known PCM1802 flaw]
 > Defect 1. The PCM1802 board needs MODE0 bridged *and* connected to 3.3V with a wire (Those boards have a design error)
 > - How to know: if your module measures 3.3v at the 3.3v header pin, this is your module;
@@ -71,9 +78,6 @@ Additional Items needed:
 > Defect 2. The PCM1802 board needs MODE0 bridged *and* connected to 3.3V with a wire *AND* the 3.3v supply restored by adding a jumper wire.
 
 ![pcm-module-defect-#2](assets/Adobe_Photoshop_2025_2025-12-24_at_11.30.192x.png)
-
-- 1x [DVI-Sock](https://github.com/Wren6991/Pico-DVI-Sock) for a flush fit with the pcb edge, otherwise the adafruit DVI sock works fine too
-- 2x 15pin 2.54mm pin-socket header
 
 
 ### 2. Modify the AD9226/AD8138 Module
