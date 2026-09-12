@@ -68,14 +68,14 @@ Additional Items needed:
 #### PCM1802 module defect fixes ####
 
 > [!CAUTION - 2 known PCM1802 flaw]
-> Defect 1. The PCM1802 board needs MODE0 bridged *and* connected to 3.3V with a wire (Those boards have a design error)
+> Defect 1. The PCM1802 board needs MODE0 connected to 3.3V with a wire (Those boards have a design error)
 > - How to know: if your module measures 3.3v at the 3.3v header pin, this is your module;
 
 ![pcm-module-defect-#1](assets/pcm-module-mode.jpg)
 
 *Or*
 
-> Defect 2. The PCM1802 board needs MODE0 bridged *and* connected to 3.3V with a wire *AND* the 3.3v supply restored by adding a jumper wire.
+> Defect 2. The PCM1802 board needs MODE0 connected to 3.3V with a wire *AND* the 3.3v supply restored by adding a jumper wire.
 
 > - How to know: if your module measures 0v at the 3.3v header pin, this is your module;
 
