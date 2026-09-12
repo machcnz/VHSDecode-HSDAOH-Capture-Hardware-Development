@@ -65,7 +65,7 @@ Additional Items needed:
 - 2x 15pin 2.54mm pin-socket header
 
 
-**PCM1802 module defect fixes**
+#### PCM1802 module defect fixes ####
 
 > [!CAUTION - 2 known PCM1802 flaw]
 > Defect 1. The PCM1802 board needs MODE0 bridged *and* connected to 3.3V with a wire (Those boards have a design error)
