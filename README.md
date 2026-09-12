@@ -77,6 +77,8 @@ Additional Items needed:
 
 > Defect 2. The PCM1802 board needs MODE0 bridged *and* connected to 3.3V with a wire *AND* the 3.3v supply restored by adding a jumper wire.
 
+> - How to know: if your module measures 0v at the 3.3v header pin, this is your module;
+
 ![pcm-module-defect-#2](assets/Adobe_Photoshop_2025_2025-12-24_at_11.30.192x.png)
 
 
