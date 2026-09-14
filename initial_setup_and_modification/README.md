@@ -78,13 +78,13 @@ Gain is set to ~4x to target the input level of 650mVp-p
 
 1. **R3, R5, R8, R17** - **Remove** 
 2. **R8 or R17 or R3** — **Add** 56Ω resistor 
-3. **R5** — **Add** 0Ω resistor _- Optionally taken from R25_ 
+3. **R5** — **Add** 0Ω resistor taken from **R25** 
 4. **R9 & R11** — **Replace** with 47Ω resistors 
 5. **R2 & R14** — **Replace** with 2.2kΩ _- Recommended gain_ 
 6. **R6 & R13** — **Replace** with 270Ω resistors 
 7. **R16** — **Replace** with 27Ω resistor _- Provides DC offset balance_ 
 8. **C3A** — **Add** 10nF capacitor lifted at 45 deg in series with **R16**
-9. **C3B** — **Add** 10nF capacitor replacing **R5/R25**
+9. **C3B** — **Add** 10nF capacitor replacing **R25**
 
 
 **Modded variant**
@@ -130,16 +130,16 @@ Gain is set to ~4x to target the input level of 650mVp-p
 
 ### BOM
 
-| Type       | Value    | Ref        | Quantity |
-|------------|----------|------------|----------|
-| Resistor   | 27 Ohm   | R16        | 1        |
-| Resistor   | 47 Ohm   | R9, R11    | 2        |
-| Resistor   | 56 Ohm    | R17/R3-R25 | 1        |
-| Resistor   | 270 Ohm    | R6, R13    | 2        |
-| _Resistor_ | _2.2k Ohm_ | _R2, R14_  | _2_        |
-| Capacitor  | 10 nF   | R16, R25        | 1        |
-| Capacitor  | 2.2 pF   | R2, R14    | 2        |
-| Capacitor  | 82 pF   | R9/R11     | 1        |
+| Type       | Value    | Ref       | Quantity |
+|------------|----------|-----------|----------|
+| Resistor   | 27 Ohm   | R16       | 1        |
+| Resistor   | 47 Ohm   | R9, R11   | 2        |
+| Resistor   | 56 Ohm    | R8        | 1        |
+| Resistor   | 270 Ohm    | R6, R13   | 2        |
+| _Resistor_ | _2.2k Ohm_ | _R2, R14_ | _2_        |
+| Capacitor  | 10 nF   | R16, R25  | 1        |
+| Capacitor  | 2.2 pF   | R2, R14   | 2        |
+| Capacitor  | 82 pF   | R9/R11    | 1        |
 
 > [!NOTE]  
 > All SMD, 0805 size<br>
