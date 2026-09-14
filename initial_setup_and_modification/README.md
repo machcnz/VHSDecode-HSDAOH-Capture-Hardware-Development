@@ -91,7 +91,6 @@ Gain is set to ~4x to target the input level of 650mVp-p
 
 ![schematic-gain-mod.jpg](assets/schematic-gain-lpf-mod.JPG)
 
-<!--
 #### Visual guide
 <details>
   <summary>Step by step visual guide</summary>
@@ -104,10 +103,10 @@ Gain is set to ~4x to target the input level of 650mVp-p
   ![gain-mod-step-6.jpg](assets/gain_mod_steps/gain-mod-step-6.jpg)
   ![gain-mod-step-7.jpg](assets/gain_mod_steps/gain-mod-step-7.jpg)
   ![gain-mod-step-8.jpg](assets/gain_mod_steps/gain-mod-step-8.jpg)
+  ![gain-mod-step-9.jpg](assets/gain_mod_steps/gain-mod-step-9.jpg)
   
 </details>
 
--->
 
 ### LPF and other improvements
 
