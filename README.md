@@ -9,7 +9,7 @@ Sharing of VHS-Decode hardware development with a focus standardizing the low co
 
 [Case](case/README.md) - .stl files for printable case
 
-[Graphical app for this hardware, _the one and only_ **MISRC-GUI**][(https://github.com/harrypm/MISRC/releases](https://github.com/harrypm/MISRC-GUI/releases) - download and install the Windows release here.
+[Graphical app for this hardware _the one and only_ **MISRC-GUI** ][(https://github.com/harrypm/MISRC/releases](https://github.com/harrypm/MISRC-GUI/releases) - download and install the Windows release here.
 
 ## The high level steps to get up and running.
 This guide assumes a basic understand of the concepts, hardware & software options and usage of the VHS decode's capture method.
