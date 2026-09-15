@@ -77,7 +77,7 @@ Gain is set to ~4x to target the input level of 650mVp-p
 ### Recommended improvements for capture
 
 1. **R3, R5, R8, R17** - **Remove** 
-2. **R8 or R17 _or_ R3** — **Add** 56Ω resistor ----- Your choice where you place this 56 ohm resistor, only in one place!
+2. **R8 or R17 _or_ R3** — **Add** 56Ω resistor ----- Your choice where you place this one 56 ohm resistor, only install in _one_ place of your choice!
 3. **R5** — **Add** 0Ω resistor taken from **R25** 
 4. **R9 & R11** — **Replace** with 47Ω resistors 
 5. **R2 & R14** — **Replace** with 2.2kΩ _- Recommended gain_ 
@@ -115,7 +115,7 @@ Gain is set to ~4x to target the input level of 650mVp-p
 > You can use a different C4A value from table below<br>
 
 1. **C4A** — **Add** 82pF capacitor **across R9/R11 on the AD9226 side** _- Provides 1-pole -3db@10MHz LPF & ADC kickback suppression_ 
-2. **C2A/B** — **Add** 2.2pF capacitor **in parallel** on top of **R2 & R14** _- Stability and slight antialiasing LPF roll off_ 
+2. **C2A/B** — **Add** 2.2pF capacitor **in parallel** on top of **R2 & R14** _- Stability and slight antialiasing LPF roll off_   <- Not critical to the mod success, your choice to install or not.
 
 | C4A       | Cutoff frequency    |
 |------------|----------|
