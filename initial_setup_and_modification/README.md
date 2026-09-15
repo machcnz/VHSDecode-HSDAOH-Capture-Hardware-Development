@@ -77,7 +77,7 @@ Gain is set to ~4x to target the input level of 650mVp-p
 ### Recommended improvements for capture
 
 1. **R3, R5, R8, R17** - **Remove** 
-2. **R8 or R17 or R3** — **Add** 56Ω resistor 
+2. **R8 or R17 _or_ R3** — **Add** 56Ω resistor ----- Your choice where you place this 56 ohm resistor, only in one place!
 3. **R5** — **Add** 0Ω resistor taken from **R25** 
 4. **R9 & R11** — **Replace** with 47Ω resistors 
 5. **R2 & R14** — **Replace** with 2.2kΩ _- Recommended gain_ 
