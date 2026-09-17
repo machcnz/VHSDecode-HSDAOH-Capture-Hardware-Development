@@ -13,4 +13,4 @@ STL files for the single-channel AD9226 HSDAOH grabber enclosure.
 | Screws | M3 |
 | Inserts | 4.6 mm heat-set (for ~4.0 mm holes) |
 
-**Full guide** (print settings, insert install, assembly, photos): [docs/case.md](../docs/case.md)
+**Full guide** (insert install, assembly, photos): [docs/case.md](../docs/case.md)

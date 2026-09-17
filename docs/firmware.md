@@ -11,7 +11,7 @@ Captured data goes **HDMI → MS2130**, not over the Pico USB data path. USB is 
 | [`clipping_led_firmware.uf2`](../rp2350_firmware/clipping_led_firmware.uf2) | **Recommended** — HSDAOH + Pico 2 **power LED** as ADC clipping indicator |
 | [`stock_firmware.uf2`](../rp2350_firmware/stock_firmware.uf2)               | HSDAOH without the clipping LED behaviour                                 |
 
-UF2 binaries are contained in `rp2350_firmware` folder
+UF2 binaries are contained in [`rp2350_firmware`](../rp2350_firmware/) folder
 
 ## Flashing Pico 2
 
