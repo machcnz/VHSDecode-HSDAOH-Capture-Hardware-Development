@@ -56,7 +56,7 @@ hardware deeper dive
 | Gain example | **~4x**                                       |
 | Optional LPF | **82 pF** ≈ **10 MHz**, VHS / Video8 oriented |
 
-[Full procedure](initial_setup_and_modification/README.md)
+[Full procedure](docs/ad9226_modding.md)
 
 ---
 
