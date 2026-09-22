@@ -24,7 +24,7 @@ audio) via an **MS2130/MS2130S** USB3 HDMI capture dongle.
 | See the full path end-to-end   | [Getting started](docs/getting-started.md) **[Under construction 🚧]**         |
 | Order/build the capture device | [BOM and build](docs/bom-and-build.md) **[Under construction 🚧]**             |
 | Fix my PCM1802 defects         | [PCM1802 fixes](docs/pcm1802_fixes.md)                                         |
-| Modify the AD9226              | [AD9226 guide](initial_setup_and_modification/README.md)                                           |
+| Modify the AD9226              | [AD9226 guide](docs/ad9226_modding.md)                                         |
 | Flash the Pico 2               | [Firmware](docs/firmware.md)                                                   |
 | Print the case                 | [Case](docs/case.md)                                                           |
 | Cable up and capture           | [Connect and capture](docs/connect-and-capture.md) **[Under construction 🚧]** |
