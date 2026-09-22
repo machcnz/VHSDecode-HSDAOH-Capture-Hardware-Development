@@ -44,7 +44,6 @@ hardware deeper dive
 | [`docs/`](docs/index.md)                                             | All guides (Markdown wiki)                                |
 | [`case/`](case/)                                                     | STL files (`HSDAOH_case_base.stl`, `HSDAOH_case_lid.stl`) |
 | [`rp2350_firmware/`](rp2350_firmware/)                               | UF2 binaries (stock + clipping LED)                       |
-| [`initial_setup_and_modification/`](initial_setup_and_modification/) | AD9226 modding guide **[To be reworked 🔨]**              |
 
 ---
 
