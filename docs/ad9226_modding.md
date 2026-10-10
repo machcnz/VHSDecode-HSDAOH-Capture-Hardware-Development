@@ -2,7 +2,7 @@
 
 > [!NOTE]  
 > Revision 1.0<br>
-> 14-09-2026
+> 15-09-2026
 
 <!-- TOC -->
 
@@ -80,7 +80,7 @@ Gain is set to ~4x to target the input level of 650mVp-p
 ### Recommended improvements for capture
 
 1. **R3, R5, R8, R17** - **Remove**
-2. **R8 or R17 or R3** — **Add** 56Ω resistor
+2. **R8 or R17** — **Add** 56Ω resistor ----- Your choice where you place this one 56 ohm resistor. Only install in _one_ place!
 3. **R5** — **Add** 0Ω resistor taken from **R25**
 4. **R9 & R11** — **Replace** with 47Ω resistors
 5. **R2 & R14** — **Replace** with 2.2kΩ _- Recommended gain_
@@ -118,8 +118,8 @@ Gain is set to ~4x to target the input level of 650mVp-p
 
 1. **C4A** — **Add** 82pF capacitor **across R9/R11 on the AD9226 side** _- Provides 1-pole -3db@10MHz LPF & ADC
    kickback suppression_
-2. **C2A/B** — **Add** 2.2pF capacitor **in parallel** on top of **R2 & R14** _- Stability and slight antialiasing LPF
-   roll off_
+2. **C2A/B** — **Add** 2.2pF capacitor **in parallel** on top of **R2 & R14** _- Stability and slight antialiasing LPF roll off_   <- Not critical to the mod success, your choice to install or not
+
 
 | C4A       | Cutoff frequency |
 |-----------|------------------|
@@ -137,7 +137,7 @@ Gain is set to ~4x to target the input level of 650mVp-p
 |------------|------------|-----------|----------|
 | Resistor   | 27 Ohm     | R16       | 1        |
 | Resistor   | 47 Ohm     | R9, R11   | 2        |
-| Resistor   | 56 Ohm     | R8        | 1        |
+| Resistor   | 56 Ohm     | R8 or R17       | 1        |
 | Resistor   | 270 Ohm    | R6, R13   | 2        |
 | _Resistor_ | _2.2k Ohm_ | _R2, R14_ | _2_      |
 | Capacitor  | 10 nF      | R16, R25  | 1        |
