@@ -1,7 +1,7 @@
 # AD9226 Module modification for VHS-Decode - ADC Capture - ~650mVp-p@50Ω
 
 > [!NOTE]  
-> Revision 1.0<br>
+> Revision 1.1<br>
 > 15-09-2026
 
 <!-- TOC -->
